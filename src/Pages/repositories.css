@@ -1,0 +1,69 @@
+body {
+  background-image: url(https://s2.glbimg.com/rYRBkQxZVtJ1R6M27XDIujqZnLI=/e.glbimg.com/og/ed/f/original/2019/03/12/pia12348_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  background-size: cover;
+  display: grid;
+  
+}
+#home {
+  text-align: center;
+  color: aliceblue;
+}
+h1 {
+  margin: 50px;
+}
+input {
+  width: 50%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  font-size: medium;
+}
+button {
+  width: 15%;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    rgba(111, 2, 133, 0.712) 50%,
+    rgb(224, 129, 19) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: rgb(68, 1, 95);
+  font-weight: 800;
+  font-size: medium;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+button:hover {
+  background-position: left bottom;
+  color: rgb(255, 255, 255);
+}
+
+#nome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+ul {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+CardRepository {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

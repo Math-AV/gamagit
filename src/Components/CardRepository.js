@@ -10,13 +10,12 @@ export default function CardRepository({ repository }) {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        marginLeft: 12,
-        marginTop: 50,
-        border: `1px solid ${getBorderColor(repository.language)}`,
+        margin: "10px auto",
+        border: `5px solid ${getBorderColor(repository.language)}`,
       }}
     >
-      <h5>{repository.name}</h5>
-      <h6>language: {repository.language}</h6>
+      <h5 style={{marginTop: 20,}} >{repository.name}</h5>
+      <h6 style={{marginBottom: 20,}} >language: {repository.language}</h6>
     </div>
   );
 }
@@ -24,5 +23,5 @@ function getBorderColor(language) {
   if (language === "JavaScript") return "cyan";
   if (language === "Python") return "orange";
   if (language === "C") return "purple";
-  return "black";
+  return "white";
 }

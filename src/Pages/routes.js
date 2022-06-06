@@ -1,16 +1,18 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router , Routes, Route, } from "react-router-dom";
 import Repositories from "./Repositories";
 import Home from "./Home";
+import Error from "./Error";
 
 export default function RouteRotas() {
   return (
-    <BrowserRouter>
+    <Router>        
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Repositories" element={<Repositories />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
